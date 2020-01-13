@@ -1,0 +1,143 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+/*везде решила не задавать ширину и ориентироваться на ширину окна браузера
+но секции с текстом при маленьком размере окна съезжают :(*/
+
+.heading {
+	display: flex;
+	height: 140px; 
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	align-items: center;
+	justify-content: space-between;
+	/*position: fixed;
+	z-index: 1; 
+	ширина шапки без position есть ширина окна браузера,с position меняется по значению контента*/
+}
+
+a {
+	font-size: 50px;
+	font-family: 'PT Sans', sans-serif;
+	text-decoration: none;
+	color: #E50043;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.links a {
+	margin-left: 25px;
+	width: 118.41px;
+}
+
+/*main {
+	position: relative;
+	top: 140px;
+} */
+
+#image-section {
+	height: 950px;
+	display: flex;
+	align-items: center;
+	background-image: url(../img/evian_origins_logo.jpg);
+	background-size: cover;
+	background-position: center;
+	font-size: 100px;
+	font-family: 'PT Sans', sans-serif;
+	color: #E50043;
+}
+
+#image-section div {
+	margin: auto;
+	text-align: center;
+}
+
+#text-section {
+	box-sizing: border-box;
+	border: 3px solid #F8BFC7;
+	border-radius: 20px;
+	margin: 150px 200px;
+	padding: 24px;
+	font-size: 25px;
+	font-family: 'PT Sans', sans-serif;
+	color: #000000;
+	line-height: 29px;
+	letter-spacing: 0.05em;
+}
+
+#icons-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.icons-text {
+	font-size: 25px;
+	font-family: 'PT Sans', sans-serif;
+	color: #000000;
+	line-height: 29px;
+	text-align: center;
+	margin: 42px 0px;
+}
+
+#composition-section {
+	box-sizing: border-box;
+	border: 3px solid #F8BFC7;
+	border-radius: 20px;
+	margin: 108px 200px 150px;
+	font-size: 25px;
+	font-family: 'PT Sans', sans-serif;
+	color: #000000;
+	line-height: 29px;
+	letter-spacing: 0.05em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+#composition-section img {
+	height: 220px;
+	margin: 30px 80px;
+}
+
+#composition-section div {
+	margin: 30px 30px 30px 0px;
+}
+
+.footing {
+	/*position: relative;
+	top: 140px;*/
+	display: flex;
+	height: 140px;
+	box-sizing: border-box;
+	padding: 50px;
+	background-color: #F8BFC7;
+	font-size: 50px;
+	font-family: 'PT Sans', sans-serif;
+	color: #FFFFFF;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footing a {
+	font-size: 50px;
+	font-family: 'PT Sans', sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
