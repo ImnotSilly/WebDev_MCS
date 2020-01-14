@@ -1,20 +1,19 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
-/*везде решила не задавать ширину и ориентироваться на ширину окна браузера
-но секции с текстом при маленьком размере окна съезжают :(*/
+/*жду лучший вариант с фиксацией шапки*/
 
 .heading {
 	display: flex;
 	height: 140px; 
+	width: 100%;
 	padding: 50px;
 	box-sizing: border-box;
 	background-color: #FFFFFF;
 	align-items: center;
 	justify-content: space-between;
-	/*position: fixed;
-	z-index: 1; 
-	ширина шапки без position есть ширина окна браузера,с position меняется по значению контента*/
+	position: fixed;
+	z-index: 1;
 }
 
 a {
@@ -35,12 +34,13 @@ a {
 	width: 118.41px;
 }
 
-/*main {
-	position: relative;
-	top: 140px;
-} */
+.invisible {
+	height: 140px;
+	box-sizing: border-box;
+	display: flex;
+}
 
-#image-section {
+.image {
 	height: 950px;
 	display: flex;
 	align-items: center;
@@ -52,16 +52,19 @@ a {
 	color: #E50043;
 }
 
-#image-section div {
+.image div {
 	margin: auto;
 	text-align: center;
 }
 
 #text-section {
+	padding: 150px 200px 0px 200px;
+}
+
+.text {
 	box-sizing: border-box;
 	border: 3px solid #F8BFC7;
 	border-radius: 20px;
-	margin: 150px 200px;
 	padding: 24px;
 	font-size: 25px;
 	font-family: 'PT Sans', sans-serif;
@@ -76,6 +79,8 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+	box-sizing: border-box;
+	padding-top: 150px;
 }
 
 .icons {
@@ -92,14 +97,17 @@ a {
 	color: #000000;
 	line-height: 29px;
 	text-align: center;
-	margin: 42px 0px;
+	padding: 42px 0px;
 }
 
 #composition-section {
+	padding: 150px 200px;
+}
+
+.composition {
 	box-sizing: border-box;
 	border: 3px solid #F8BFC7;
 	border-radius: 20px;
-	margin: 108px 200px 150px;
 	font-size: 25px;
 	font-family: 'PT Sans', sans-serif;
 	color: #000000;
@@ -109,20 +117,15 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
+	padding: 30px;
 }
 
-#composition-section img {
+.composition img {
 	height: 220px;
-	margin: 30px 80px;
-}
-
-#composition-section div {
-	margin: 30px 30px 30px 0px;
+	margin: 0px 80px 0px 50px;
 }
 
 .footing {
-	/*position: relative;
-	top: 140px;*/
 	display: flex;
 	height: 140px;
 	box-sizing: border-box;
