@@ -1,8 +1,6 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
-/*жду лучший вариант с фиксацией шапки*/
-
 .heading {
 	display: flex;
 	height: 140px; 
@@ -57,7 +55,7 @@ a {
 	text-align: center;
 }
 
-#text-section {
+.text-section {
 	padding: 150px 200px 0px 200px;
 }
 
@@ -73,7 +71,7 @@ a {
 	letter-spacing: 0.05em;
 }
 
-#icons-section {
+.icons-section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -100,7 +98,7 @@ a {
 	padding: 42px 0px;
 }
 
-#composition-section {
+.composition-section {
 	padding: 150px 200px;
 }
 
