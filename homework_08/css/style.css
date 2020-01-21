@@ -1,0 +1,82 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap');
+
+.heading {
+	min-height: 160px;
+	background-color: #FEB700;
+	display: flex;
+}
+
+.heading h1 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 50px;
+	color: #000000;
+	text-align: center;
+	margin: auto;
+	line-height: 57px;
+}
+
+.columns {
+	display: flex;
+	padding: 70px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.column {
+	width: calc((100% - 100px)/3);
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+.image {
+	height: calc((100vw - 240px)/3*.5);
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 100%;
+}
+
+.image.first {
+	background-image: url(../img/first.png);
+}
+
+.image.second {
+	background-image: url(../img/second.png);
+}
+
+.image.third {
+	background-image: url(../img/third.png);
+}
+
+.text {
+	padding: 30px 33px;
+	font-family: 'Old Standard TT', serif;
+	font-size: 20px;
+	color: #000000;
+	line-height: 23px;
+}
+
+.text h2 {
+	font-weight: bold;
+}
+
+.text p, ul {
+	margin-top: 23px;
+}
+
+.footing {
+	height: 160px;
+	background-color: #FEB700;
+	font-family: 'Old Standard TT', serif;
+	font-size: 50px;
+	color: #000000;
+	padding: 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footing a {
+	text-decoration: none;
+	color: #000000;
+}
