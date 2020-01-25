@@ -1,0 +1,134 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu&display=swap');
+
+.heading {
+	display: flex;
+	height: 90px;
+	background-color: #F8BFC7;
+	padding: 0px 50px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu.one a {
+	margin-right: 30px;
+}
+
+.heading nav a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	line-height: 23px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.first-section {
+	background-image: url(../img/bgi.png);
+	background-size: cover;
+	background-position: center;
+	height: 643px;
+	padding: 90px;
+}
+
+.first-block {
+	width: 300px;
+	height: 362px;
+	background: #F8BFC7;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.first-block label {
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+label[for='name']{
+	margin-top: 0px;
+}
+
+.first-block input {
+	display: block;
+	width: 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF; /*не смогла поменять цвет placeholder*/
+	border-bottom: 1px solid #FFFFFF; 
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background: #F8BFC7;	
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+.first-block input {
+	outline-color: #FFFFFF;
+}
+
+.second-block {
+	margin: 10px 50px;
+}
+
+.second-block input {
+	width: 200px;
+	height: 60px;
+	background: #FEB700;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFFFFF; 
+}
+
+.second-block input {
+	outline: none;
+	cursor: pointer;
+}
+
+.second-section {
+	background-color: #2f70d2;
+	height: 201px;
+}
+
+.package {
+	margin: auto;
+	padding-top: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 50px;
+	line-height: 57px;
+	color: #FEB700;
+	text-align: center;
+}
+
+.footing {
+	display: flex;
+	height: 90px;
+	background-color: #F8BFC7;
+	padding: 0px 50px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footing a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footing a[href='#'] {
+	margin-right: 30px;
+}
